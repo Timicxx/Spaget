@@ -1520,7 +1520,7 @@ function _emscripten_asm_const_v(code) {
  return ASM_CONSTS[code]();
 }
 STATIC_BASE = 8;
-STATICTOP = Runtime.alignMemory(STATIC_BASE, 16) + 2268704;
+STATICTOP = Runtime.alignMemory(STATIC_BASE, 16) + 2269040;
 __ATINIT__.push({
  func: (function() {
   __GLOBAL__sub_I_runtime_ai_internal_builder_lump_cpp();
@@ -14044,6 +14044,17 @@ function _emscripten_set_touchmove_callback(target, userData, useCapture, callba
  JSEvents.registerTouchEventCallback(target, userData, useCapture, callbackfunc, 24, "touchmove");
  return 0;
 }
+function _ImageUploaderInit() {
+ var fileInput = document.createElement("input");
+ fileInput.setAttribute("type", "file");
+ fileInput.onclick = (function(event) {
+  this.value = null;
+ });
+ fileInput.onchange = (function(event) {
+  SendMessage("Canvas", "FileSelected", URL.createObjectURL(event.target.files[0]));
+ });
+ document.body.appendChild(fileInput);
+}
 function _emscripten_glUniform1f(location, v0) {
  location = GL.uniforms[location];
  GLctx.uniform1f(location, v0);
@@ -17477,6 +17488,7 @@ Module.asmLibraryArg = {
  "_glProgramParameteri": _glProgramParameteri,
  "_localtime_r": _localtime_r,
  "_glBindTexture": _glBindTexture,
+ "___syscall51": ___syscall51,
  "_sigemptyset": _sigemptyset,
  "_strftime": _strftime,
  "_emscripten_glGetVertexAttribiv": _emscripten_glGetVertexAttribiv,
@@ -17816,7 +17828,7 @@ Module.asmLibraryArg = {
  "_glCompressedTexSubImage3D": _glCompressedTexSubImage3D,
  "_emscripten_glBindVertexArray": _emscripten_glBindVertexArray,
  "_SDL_UpperBlit": _SDL_UpperBlit,
- "___syscall51": ___syscall51,
+ "_ImageUploaderInit": _ImageUploaderInit,
  "_emscripten_glActiveTexture": _emscripten_glActiveTexture,
  "_emscripten_set_keyup_callback": _emscripten_set_keyup_callback,
  "_emscripten_glDeleteVertexArrays": _emscripten_glDeleteVertexArrays,
