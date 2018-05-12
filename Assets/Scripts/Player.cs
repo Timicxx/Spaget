@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
     float velocityXSmoothing;
     Vector3 velocity;
     Vector2 input;
+    bool changeGravity;
 
     private void Start() {
         ctrl2D = GetComponent<Controller2D>();
@@ -27,14 +28,19 @@ public class Player : MonoBehaviour {
     }
 
     private void Update() {
+        changeGravity = GetComponent<vvvvvv>().gravityChange;
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         if(ctrl2D.collisions.above || ctrl2D.collisions.below) {
             velocity.y = 0;
         }
 
-        if(Input.GetKeyDown("space") == true && ctrl2D.collisions.below) {
-            velocity.y = jumpVelocity;
+        if(changeGravity && Input.GetKeyDown("space") == true) {
+            gravity *= -1;
+        }
+
+        if(Input.GetKeyDown("space") == true && ctrl2D.collisions.below && !changeGravity) {
+            velocity.y = jumpVelocity;  
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {

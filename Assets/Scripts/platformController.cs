@@ -98,6 +98,7 @@ public class platformController : RayCastController {
 
         float directionX = Mathf.Sign(velocity.x);
         float directionY = Mathf.Sign(velocity.y);
+        
 
         if (velocity.y != 0) {
             float rayLength = Mathf.Abs(velocity.y) + skinWidth;
@@ -105,6 +106,7 @@ public class platformController : RayCastController {
             for (int i = 0; i < verticalRays; i++) {
                 Vector2 rayOrigin = (directionY == -1) ? raycastPoints.bottomLeft : raycastPoints.topLeft;
                 rayOrigin += Vector2.right * (verticalRaySpacing * i);
+
                 RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, PassengerMask);
 
                 Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.yellow);
@@ -133,7 +135,7 @@ public class platformController : RayCastController {
 
             for (int i = 0; i < horizontalRays; i++) {
                 Vector2 rayOrigin = (directionX == -1) ? raycastPoints.bottomLeft : raycastPoints.bottomRight;
-                rayOrigin += Vector2.up * (horizontalRaySpacing * i);
+                rayOrigin += Vector2.up * (horizontalRaySpacing * i) + Vector2.up;
                 RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, PassengerMask);
 
                 Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.yellow);
@@ -163,7 +165,7 @@ public class platformController : RayCastController {
                 Vector2 rayOrigin = raycastPoints.topLeft + Vector2.right * (verticalRaySpacing * i);
                 RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up, rayLength, PassengerMask);
 
-                Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.yellow);
+                Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.yellow);
 
                 if (hit) {
                     if (!movedPassengers.Contains(hit.transform)) {
