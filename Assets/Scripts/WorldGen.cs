@@ -1,26 +1,26 @@
 ﻿using System.IO;
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class WorldGen : MonoBehaviour {
 
-    public Texture2D sceneMap;
+    public bool stretch = false;
     public colorPrefabArray[] colorMappings;
+    private Texture2D sceneMap;
+    private List<Vector3> platformPos = new List<Vector3>();
 
 	void Awake () {
         sceneMap = new Texture2D(2, 2);
         string path = PlayerPrefs.GetString("sceneMapPath");
         sceneMap.LoadImage(File.ReadAllBytes(path));
-
-        Camera.main.orthographicSize = sceneMap.width * Screen.height / Screen.width * 0.5f;
-        Camera.main.transform.position = new Vector3((sceneMap.width / 2), (sceneMap.height / 2) - 0.5f, -10);
     }
 
     private void Start() {
-        Debug.Log(sceneMap.width + "x" + sceneMap.height);
         Generate();
+        CameraRecalculation();
     }
 
     private void Generate() {
@@ -29,6 +29,12 @@ public class WorldGen : MonoBehaviour {
                 Tile(i, j);
             }
         }
+        try {
+            SetPlatformWaypoints();
+        } catch {
+            Debug.Log("No platform!");
+        }
+       
     }
 
     void Tile(int x, int y) {
@@ -38,10 +44,23 @@ public class WorldGen : MonoBehaviour {
             return;
         }
 
+        if (pixelColor == Color.white) {
+            stretch = true;
+            return;
+        }
+
         foreach (colorPrefabArray colorMapping in colorMappings) {
+            Vector2 pos = new Vector2(x, y);
 
             if (colorMapping.color.Equals(pixelColor)) {
-                Vector2 pos = new Vector2(x, y);
+                if (colorMapping.color == Color.magenta) {
+                    if (GameObject.FindWithTag("Platform") == null) {
+                        Instantiate<GameObject>(colorMapping.prefab, Vector2.zero, Quaternion.identity, null);
+                    }
+                    platformPos.Add(pos);
+                    return;
+                }
+
                 GameObject obj = Instantiate<GameObject>(colorMapping.prefab, pos, Quaternion.identity, transform);
 
                 if(obj.transform.name == "Spikes(Clone)") {
@@ -50,6 +69,24 @@ public class WorldGen : MonoBehaviour {
                 }
             }
         }
-        
+    }
+
+    void SetPlatformWaypoints() {
+        Vector3[] wayPoints = new Vector3[platformPos.Count];
+
+        for (int i = 0; i < platformPos.Count; i++) {
+            wayPoints[i] = platformPos[i];
+        }
+
+        GameObject.FindWithTag("Platform").GetComponent<platformController>().localWaypoints = wayPoints;
+    }
+
+    void CameraRecalculation() {
+        float width = stretch ? (16 / 9) * sceneMap.height : sceneMap.width;
+        Camera.main.orthographicSize = width * Screen.height / Screen.width * 0.5f;
+        float x = stretch ? (GameObject.FindWithTag("Player").transform.position.x) : (sceneMap.width / 2);
+        float y = stretch ? (Camera.main.rect.yMin) : (sceneMap.height / 2);
+        Camera.main.transform.position = new Vector3(x, y, -10);
+        Camera.main.gameObject.AddComponent<followPlayer>();
     }
 }

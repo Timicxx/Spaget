@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class followPlayer : MonoBehaviour {
     GameObject player;
@@ -11,8 +9,15 @@ public class followPlayer : MonoBehaviour {
 	}
 	
 	void Update () {
-        playerLocation = player.transform.position;
-        playerLocation.z = -15;
-        transform.position = playerLocation;
+        try {
+            if (GameObject.Find("WorldGen").GetComponent<WorldGen>().stretch) {
+                playerLocation = player.transform.position;
+                playerLocation.y = 18;
+                playerLocation.z = -15;
+                transform.position = playerLocation;
+            }
+        } catch {
+            Destroy(this);
+        }
 	}
 }

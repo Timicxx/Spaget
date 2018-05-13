@@ -17,7 +17,8 @@ public class platformController : RayCastController {
     public float EaseVar;
 
     public Vector3[] localWaypoints;
-    Vector3[] globalWaypoints;
+    [HideInInspector]
+    public Vector3[] globalWaypoints;
 
     List<PassengerMovement> passengerMovement;
     Dictionary<Transform, Controller2D> passengerDictionary = new Dictionary<Transform, Controller2D>();
@@ -98,7 +99,6 @@ public class platformController : RayCastController {
 
         float directionX = Mathf.Sign(velocity.x);
         float directionY = Mathf.Sign(velocity.y);
-        
 
         if (velocity.y != 0) {
             float rayLength = Mathf.Abs(velocity.y) + skinWidth;
@@ -135,7 +135,7 @@ public class platformController : RayCastController {
 
             for (int i = 0; i < horizontalRays; i++) {
                 Vector2 rayOrigin = (directionX == -1) ? raycastPoints.bottomLeft : raycastPoints.bottomRight;
-                rayOrigin += Vector2.up * (horizontalRaySpacing * i) + Vector2.up;
+                rayOrigin += Vector2.up * (horizontalRaySpacing * i);
                 RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, PassengerMask);
 
                 Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.yellow);

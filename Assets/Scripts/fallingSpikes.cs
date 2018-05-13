@@ -20,6 +20,12 @@ public class fallingSpikes : MonoBehaviour {
             if(hit.distance <= 0.1f && hit.transform.tag == "Platform") {
                 transform.SetParent(hit.transform);
                 fallingSpeed = 0f;
+                return;
+            }
+            if(hit.distance <= 0.1f) {
+                fallingSpeed = 0f;
+            } else {
+                fallingSpeed = -9.81f;
             }
         }
     }
