@@ -15,27 +15,44 @@ public class nextLevel : MonoBehaviour {
     }
 
     public void DestroyMe() {
-        if(SceneManager.GetActiveScene().name == "2") {
+        SceneExceptions();
+
+        skipStage();
+        Destroy(gameObject);
+    }
+
+    public void skipStage() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    private void SceneExceptions() {
+        if (SceneManager.GetActiveScene().name == "2")
+        {
             int randomIndex = Mathf.RoundToInt(Random.Range(0, spawnPos.Count));
             Instantiate<GameObject>(obj, spawnPos[randomIndex], Quaternion.identity, null);
             PlayerPrefs.SetInt("respawned", PlayerPrefs.GetInt("respawned") + 1);
             Destroy(gameObject);
             return;
         }
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Destroy(gameObject);
+        if (SceneManager.GetActiveScene().name == "5") {
+            SceneManager.LoadScene("Win");
+            Destroy(gameObject);
+            return;
+        }
     }
 
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.S) == true || stop[0] == "j") {
-            stop[0] = "j";
-            if (Input.GetKeyDown(KeyCode.T) == true || stop[1] == "u") {
-                stop[1] = "u";
-                if (Input.GetKeyDown(KeyCode.O) == true || stop[2] == "s") {
-                    stop[2] = "s";
-                    if (Input.GetKeyDown(KeyCode.P) == true || stop[3] == "t") {
-                        stop[3] = "t";
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(SceneManager.GetActiveScene().name == "2") { 
+            if(Input.GetKeyDown(KeyCode.J) == true || stop[0] == "j") {
+                stop[0] = "j";
+                if (Input.GetKeyDown(KeyCode.U) == true || stop[1] == "u") {
+                    stop[1] = "u";
+                    if (Input.GetKeyDown(KeyCode.S) == true || stop[2] == "s") {
+                        stop[2] = "s";
+                        if (Input.GetKeyDown(KeyCode.T) == true || stop[3] == "t") {
+                            stop[3] = "t";
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                        }
                     }
                 }
             }

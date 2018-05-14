@@ -139,7 +139,6 @@
     <Compile Include="Assets\Scripts\just.cs" />
     <Compile Include="Assets\Scripts\nextLevel.cs" />
     <Compile Include="Assets\Scripts\platformController.cs" />
-    <Compile Include="Assets\Scripts\programmerValues.cs" />
     <Compile Include="Assets\Scripts\restart.cs" />
     <Compile Include="Assets\Scripts\spikeExtender.cs" />
     <Compile Include="Assets\Scripts\vvvvvv.cs" />

@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class vvvvvv : MonoBehaviour {
 
     public bool gravityChange = false;
-	
-	void Update () {
+
+    void Update () {
 		if(SceneManager.GetActiveScene().name == "3") {
             gravityChange = true;
         } else {
