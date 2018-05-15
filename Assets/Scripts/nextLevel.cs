@@ -15,19 +15,7 @@ public class nextLevel : MonoBehaviour {
     }
 
     public void DestroyMe() {
-        SceneExceptions();
-
-        skipStage();
-        Destroy(gameObject);
-    }
-
-    public void skipStage() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    private void SceneExceptions() {
-        if (SceneManager.GetActiveScene().name == "2")
-        {
+        if (SceneManager.GetActiveScene().name == "2") {
             int randomIndex = Mathf.RoundToInt(Random.Range(0, spawnPos.Count));
             Instantiate<GameObject>(obj, spawnPos[randomIndex], Quaternion.identity, null);
             PlayerPrefs.SetInt("respawned", PlayerPrefs.GetInt("respawned") + 1);
@@ -39,6 +27,13 @@ public class nextLevel : MonoBehaviour {
             Destroy(gameObject);
             return;
         }
+
+        skipStage();
+        Destroy(gameObject);
+    }
+
+    public void skipStage() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void Update() {
