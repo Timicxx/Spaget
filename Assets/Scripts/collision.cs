@@ -8,6 +8,7 @@ public class collision : MonoBehaviour {
 
     public void HitHandler(RaycastHit2D hit, List<GameObject> traps) {
         if (hit.transform.tag == "Spike") {
+            PlayerPrefs.SetInt("lastScene", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene("gameOver");
             return;
         }
@@ -19,7 +20,8 @@ public class collision : MonoBehaviour {
             if (SceneManager.GetActiveScene().name == "1") {
                 Destroy(hit.transform.gameObject);
                 GameObject fallingTrap = Instantiate<GameObject>(traps[0]);
-                fallingTrap.transform.position = new Vector3(-4.97f, 4.35f, 1f);
+                Vector3 pos = GameObject.FindWithTag("Player").transform.position;
+                fallingTrap.transform.position = new Vector3(pos.x, pos.y + 5f, 1f);
                 return;
             }
         }

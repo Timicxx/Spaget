@@ -48,6 +48,11 @@ public class Player : MonoBehaviour {
             return;  
         }
 
+        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name != "gameOver") {
+            GameObject.FindWithTag("nextLevel").GetComponent<nextLevel>().skipStage();
+            return;
+        }
+
         float TargetVelocityX = input.x * moveSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, TargetVelocityX, ref velocityXSmoothing, (ctrl2D.collisions.below) ? accelerationTimeGrounded : accelerationTimeAirborne);
         velocity.y += gravity * Time.deltaTime;

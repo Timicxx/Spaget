@@ -14,8 +14,7 @@ public class restart : MonoBehaviour {
                 SceneManager.LoadScene("custom");
                 return;
             }
-            SceneManager.LoadScene("0");
-            
+            SceneManager.LoadScene(PlayerPrefs.GetInt("lastScene") - 1);
         }
 	}
 }
