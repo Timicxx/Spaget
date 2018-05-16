@@ -11,14 +11,15 @@ public class Controller2D : RayCastController {
     public CollisionInfo collisions;
 
     public List<GameObject> traps = new List<GameObject>();
-    collision colid;
+    Player player;
 
     public override void Start() {
         base.Start();
-        colid = transform.GetComponent<collision>();
+        player = transform.GetComponent<Player>();
     }
 
     public void Move(Vector3 velocity, bool isStandingOnPlatform = false) {
+        CalcRaySpacing();
         UpdateRaycastPoints();
         collisions.Reset();
 
@@ -53,7 +54,7 @@ public class Controller2D : RayCastController {
 
             if (hit) {
 
-                colid.HitHandler(hit, traps);
+                player.HitHandler(hit, traps);
 
                 velocity.y = (hit.distance - skinWidth) * directionY;
                 rayLength = hit.distance;
@@ -96,7 +97,7 @@ public class Controller2D : RayCastController {
 
             if (hit) {
 
-                colid.HitHandler(hit, traps);
+                player.HitHandler(hit, traps);
 
                 if (hit.distance == 0) {
                     continue;

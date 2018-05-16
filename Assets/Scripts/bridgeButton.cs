@@ -5,9 +5,14 @@ using UnityEngine;
 public class bridgeButton : MonoBehaviour {
     Vector3 scale;
     public float scaleSpeed = 0.5f;
-    public float openSpeed = 0.5f;
+    public float openSpeed = 25.0f;
     public float closeSpeed = 50.0f;
     private bool pranked = false;
+
+    private void Awake() {
+        openSpeed /= PlayerPrefs.GetFloat("Difficulty");
+        closeSpeed *= PlayerPrefs.GetFloat("Difficulty");
+    }
 
     private void Start() {
         scale = transform.localScale;

@@ -7,9 +7,13 @@ public class spikeRain : MonoBehaviour {
     [SerializeField]
     GameObject trap;
     double time;
-    float delay = 0.5f;
-	
-	void Update () {
+    float delay = 1f;
+
+    private void Awake() {
+        delay /= PlayerPrefs.GetFloat("Difficulty");
+    }
+
+    void Update () {
         time += Time.deltaTime;
         if(time > delay) {
             SpawnSpike();
@@ -20,7 +24,7 @@ public class spikeRain : MonoBehaviour {
     void SpawnSpike() {
         GameObject fallingTrap = Instantiate<GameObject>(trap);
         Vector3 pos = GameObject.FindWithTag("Player").transform.position;
-        fallingTrap.transform.position = new Vector3(pos.x, pos.y + 5f, 1f);
+        fallingTrap.transform.position = new Vector3(pos.x, pos.y + 10f, 1f);
         return;
     }
 }
