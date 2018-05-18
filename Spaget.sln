@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaget.Plugins", "Spaget.Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaget", "Spaget.csproj", "{E9718F2A-6689-768D-69FE-5BE10BFD2088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaget.Editor.Plugins", "Spaget.Editor.Plugins.csproj", "{38AC93E5-C572-ABEE-0BAB-021318E430CD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaget.Editor", "Spaget.Editor.csproj", "{06CBCE29-9F4C-DDD0-F3B6-6F27C63A9169}"
 EndProject
 Global
@@ -23,10 +21,6 @@ Global
 		{E9718F2A-6689-768D-69FE-5BE10BFD2088}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9718F2A-6689-768D-69FE-5BE10BFD2088}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9718F2A-6689-768D-69FE-5BE10BFD2088}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38AC93E5-C572-ABEE-0BAB-021318E430CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38AC93E5-C572-ABEE-0BAB-021318E430CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38AC93E5-C572-ABEE-0BAB-021318E430CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38AC93E5-C572-ABEE-0BAB-021318E430CD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06CBCE29-9F4C-DDD0-F3B6-6F27C63A9169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06CBCE29-9F4C-DDD0-F3B6-6F27C63A9169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06CBCE29-9F4C-DDD0-F3B6-6F27C63A9169}.Release|Any CPU.ActiveCfg = Release|Any CPU

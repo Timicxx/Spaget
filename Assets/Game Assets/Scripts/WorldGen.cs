@@ -15,6 +15,7 @@ public class WorldGen : MonoBehaviour {
 	void Awake () {
         sceneMap = new Texture2D(2, 2);
         string path = PlayerPrefs.GetString("sceneMapPath");
+        
         if(path == "WEBGL") {
             Sprite sprite = (Sprite)Resources.Load("sceneMap");
             sceneMap = new Texture2D((int)sprite.rect.width, (int)sprite.rect.height);
@@ -28,6 +29,7 @@ public class WorldGen : MonoBehaviour {
         } else {
             sceneMap.LoadImage(File.ReadAllBytes(path));
         }
+    
     }
 
     private void Start() {

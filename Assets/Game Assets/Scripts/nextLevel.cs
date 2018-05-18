@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class nextLevel : MonoBehaviour {
-    [SerializeField]
-    GameObject obj;
+    public GameObject obj;
     string[] stop = new string[4];
     public List<Vector3> spawnPos;
     int requiredCollectedBalls = 2;
