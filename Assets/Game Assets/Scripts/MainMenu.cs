@@ -34,6 +34,7 @@ public class MainMenu : MonoBehaviour {
             PlayerPrefs.SetString("sceneMapPath", "WEBGL");
             PlayerPrefs.SetInt("custom", 1);
             SceneManager.LoadScene("custom");
+            return;
         }
 
         string[] path = StandaloneFileBrowser.OpenFilePanel("Select Scene Map", "", "png", false);

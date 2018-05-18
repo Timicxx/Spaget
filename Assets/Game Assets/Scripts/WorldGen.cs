@@ -17,15 +17,7 @@ public class WorldGen : MonoBehaviour {
         string path = PlayerPrefs.GetString("sceneMapPath");
         
         if(path == "WEBGL") {
-            Sprite sprite = (Sprite)Resources.Load("sceneMap");
-            sceneMap = new Texture2D((int)sprite.rect.width, (int)sprite.rect.height);
-            var pixels = sprite.texture.GetPixels(
-                                         (int)sprite.textureRect.x,
-                                         (int)sprite.textureRect.y,
-                                         (int)sprite.textureRect.width,
-                                         (int)sprite.textureRect.height);
-            sceneMap.SetPixels(pixels);
-            sceneMap.Apply();
+            sceneMap = Resources.Load("sceneMap", typeof(Texture2D)) as Texture2D; 
         } else {
             sceneMap.LoadImage(File.ReadAllBytes(path));
         }
