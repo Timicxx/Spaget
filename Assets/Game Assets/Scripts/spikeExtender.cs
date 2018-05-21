@@ -7,7 +7,7 @@ public class spikeExtender : MonoBehaviour {
     public float spikeSpeed = 0.25f;
     int polarity;
 
-    private void Start(){
+    private void Start() {
         spikeSpeed *= PlayerPrefs.GetFloat("Difficulty");
         Vector3 screenPoints = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height, -15));
 

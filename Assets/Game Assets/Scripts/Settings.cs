@@ -5,7 +5,6 @@ using TMPro;
 public class Settings : MonoBehaviour {
 
     public Dropdown drop;
-    public TMP_InputField seed;
 
     public void Difficulty() {
         float value;
@@ -33,13 +32,6 @@ public class Settings : MonoBehaviour {
                 break;
         }
         PlayerPrefs.SetFloat("Difficulty", value);
-        Debug.Log(PlayerPrefs.GetFloat("Difficulty"));
-    }
-
-    public void Seed() {
-        if(seed.text == "1337") {
-            PlayerPrefs.SetInt("GodMode", 1);
-        }
     }
 
     public void DeleteAllPlayerPrefs() {

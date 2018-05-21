@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour {
 
     public void StartGame() {
         lastKey();
+        Debug.Log(PlayerPrefs.GetFloat("Difficulty"));
         SceneManager.LoadSceneAsync("0");
     }
 
@@ -47,6 +48,10 @@ public class MainMenu : MonoBehaviour {
         
         PlayerPrefs.SetInt("custom", 1);
         SceneManager.LoadScene("custom");
+    }
+
+    public void MultiPlayer() {
+        SceneManager.LoadSceneAsync("MP");
     }
 
     public void Exit() {

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class win : MonoBehaviour { 
     public double time;
-    public string url;
 
     private void Awake() {
         try {
@@ -17,14 +16,9 @@ public class win : MonoBehaviour {
     }
 
     void Update() {
-        Debug.Log(url);
         time += Time.deltaTime;
         if (time > 2.0f) {
-            if (PlayerPrefs.HasKey("GodMode")) {
-                SceneManager.LoadSceneAsync("Menu");
-            } else {
-                Application.OpenURL(url);
-            }
+            SceneManager.LoadSceneAsync("Menu");
         }
     }
 }
