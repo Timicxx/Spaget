@@ -13,7 +13,6 @@ public class restart : MonoBehaviour {
         } catch {
             Debug.Log("Guess there's no keys");
         }
-        
     }
 
     void Update () {
@@ -24,7 +23,7 @@ public class restart : MonoBehaviour {
                 SceneManager.LoadScene("custom");
                 return;
             }
-            int amountToGoBack = (PlayerPrefs.GetFloat("Difficulty") > 3) ? 3 : (PlayerPrefs.GetInt("lastScene") - 1);
+            int amountToGoBack = (PlayerPrefs.GetFloat("Difficulty") > 1.5f) ? 4 : (PlayerPrefs.GetInt("lastScene") - 1);
             SceneManager.LoadScene(amountToGoBack);
         }
 	}

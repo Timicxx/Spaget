@@ -26,6 +26,7 @@ public class platformController : RayCastController {
 	public override void Start () {
         base.Start();
 
+        speed *= PlayerPrefs.GetFloat("Difficulty");
         globalWaypoints = new Vector3[localWaypoints.Length];
         for(int i = 0; i < localWaypoints.Length; i++) {
             globalWaypoints[i] = localWaypoints[i] + transform.position;

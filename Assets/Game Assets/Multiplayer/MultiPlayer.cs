@@ -77,7 +77,10 @@ public class MultiPlayer : NetworkBehaviour {
             GameObject.FindWithTag("nextLevel").GetComponent<nextLevel>().skipStage();
             return;
         }
-
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Network.Disconnect();
+            SceneManager.LoadSceneAsync(0);
+        }
     }
 
     public void HitHandler(RaycastHit2D hit, GameObject trap) {
