@@ -7,10 +7,10 @@ public class nextLevel : MonoBehaviour {
     public GameObject obj;
     string[] stop = new string[4];
     public List<Vector3> spawnPos;
-    int requiredCollectedBalls = 2;
+    int requiredCollectedBalls = 3;
 
     private void Awake() {
-        requiredCollectedBalls = Mathf.FloorToInt(PlayerPrefs.GetFloat("Difficulty") * requiredCollectedBalls);
+        requiredCollectedBalls = Mathf.FloorToInt(2.67f * PlayerPrefs.GetFloat("Difficulty") + 0.67f);
     }
 
     public void DestroyMe() {

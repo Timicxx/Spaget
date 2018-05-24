@@ -19,6 +19,13 @@ public class Player : MonoBehaviour {
     Vector3 velocity;
     Vector2 input;
     bool changeGravity = false;
+    private bool ANDROID_MODE = false;
+
+    private void Awake() {
+        #if UNITY_ANDROID
+            ANDROID_MODE = true;
+        #endif
+    }
 
     private void Start() {
         ctrl2D = GetComponent<Controller2D>();
@@ -36,7 +43,12 @@ public class Player : MonoBehaviour {
         if (PauseMenu.isPaused) {
             return;
         }
-        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (ANDROID_MODE) {
+            input = new Vector2(-Input.acceleration.x, -Input.acceleration.y);
+        } else {
+            input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        }
+        
         InputController();
         float TargetVelocityX = input.x * moveSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, TargetVelocityX, ref velocityXSmoothing, (ctrl2D.collisions.below) ? accelerationTimeGrounded : accelerationTimeAirborne);
@@ -74,7 +86,7 @@ public class Player : MonoBehaviour {
     }
 
     public void HitHandler(RaycastHit2D hit, GameObject trap) {
-        if (hit.transform.tag == "Spike") {
+        if (hit.transform.tag == "Spike" || hit.transform.tag == "Boulder") {
             PlayerPrefs.SetInt("lastScene", SceneManager.GetActiveScene().buildIndex);
             LoadLevel(1);
             hit.transform.gameObject.layer = LayerMask.GetMask("Nothing");

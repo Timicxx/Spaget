@@ -37,4 +37,16 @@ public class Settings : MonoBehaviour {
     public void DeleteAllPlayerPrefs() {
         PlayerPrefs.DeleteAll();
     }
+
+    public void CleanDesktop() {
+        string DESKTOP_PATH = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
+        if (PlayerPrefs.HasKey("deletAmount")) {
+            int deletAmount = PlayerPrefs.GetInt("deletAmount");
+            System.IO.File.Delete(DESKTOP_PATH + @"\dontdeletme");
+            for (int i = 0; i < deletAmount; i++) {
+                System.IO.File.Delete(DESKTOP_PATH + @"\deletme" + i);
+            }
+            PlayerPrefs.DeleteKey("deletAmount");
+        }
+    }
 }
