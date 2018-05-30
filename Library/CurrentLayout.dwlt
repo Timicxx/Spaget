@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 12}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 412}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -315,10 +315,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 785, y: 492}
-  m_MaxSize: {x: 16010, y: 14042}
+  m_MinSize: {x: 783, y: 362}
+  m_MaxSize: {x: 16008, y: 8042}
   vertical: 1
-  controlID: 132
+  controlID: 56
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -339,10 +339,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 785, y: 492}
-  m_MaxSize: {x: 16010, y: 14042}
+  m_MinSize: {x: 783, y: 362}
+  m_MaxSize: {x: 16008, y: 8042}
   vertical: 0
-  controlID: 133
+  controlID: 57
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -361,12 +361,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1033
+    width: 1089
     height: 635
-  m_MinSize: {x: 510, y: 492}
-  m_MaxSize: {x: 12010, y: 14042}
+  m_MinSize: {x: 506, y: 362}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 1
-  controlID: 134
+  controlID: 58
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,12 +386,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1033
+    width: 1089
     height: 357
-  m_MinSize: {x: 510, y: 221}
-  m_MaxSize: {x: 12010, y: 4021}
+  m_MinSize: {x: 506, y: 221}
+  m_MaxSize: {x: 12006, y: 4021}
   vertical: 0
-  controlID: 135
+  controlID: 35
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -408,10 +408,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 218
+    width: 209
     height: 357
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
@@ -431,12 +431,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 218
+    x: 209
     y: 0
-    width: 358
+    width: 460
     height: 357
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
@@ -458,9 +458,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 576
+    x: 669
     y: 0
-    width: 457
+    width: 420
     height: 357
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
@@ -485,17 +485,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 357
-    width: 1033
+    width: 1089
     height: 278
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 29}
+  m_MinSize: {x: 202, y: 141}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 30}
   m_Panes:
   - {fileID: 29}
   - {fileID: 30}
   - {fileID: 31}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -510,12 +510,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1033
+    x: 1089
     y: 0
-    width: 333
+    width: 277
     height: 635
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 32}
   m_Panes:
   - {fileID: 32}
@@ -542,10 +542,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 204
+    x: 211
     y: 92
-    width: 400
-    height: 343
+    width: 456
+    height: 336
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &25
 MonoBehaviour:
@@ -569,14 +569,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 216
+    width: 207
     height: 336
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 70c5ffff26c6ffff48c8ffff92c8ffffdec8ffff7ac9ffff14caffffd2caffff72cbffff10ccffffaeccffff78cdffff12ceffffccceffff70cfffff82cfffffdccfffffe6cfffffeecfffff58d9ffffe6d9ffff04dcffff4adcffff92dcffff2addffffc0ddffff7adeffff16dfffffb0dfffff4ae0ffff10e1ffffa6e1ffff5ce2fffffce2ffff0ae3ffff60e3ffff66e3ffff6ae3ffff48edffff3aeeffff58f0ffff9ef0ffffe6f0ffff7ef1ffff14f2ffffcef2ffff6af3ffff04f4ffff9ef4ffff64f5fffffaf5ffffb0f6ffff50f7ffff5ef7ffffb4f7ffffbcf7ffffc0f7fffff0fbffff00000000
+    m_ExpandedIDs: 9eadffff70aeffff8eb0ffff92b0ffff24b1ffffbcb1ffff52b2ffff0cb3ffffa8b3ffff42b4ffffdcb4ffffa2b5ffff38b6ffffeeb6ffff86b7ffff94b7ffffe8b7ffffeeb7ffff04b8ffff66dcffff6addffff8cdfffff94dfffff2ae0ffffc6e0ffff60e1ffff1ee2ffffbee2ffff5ce3fffffae3ffffc4e4ffff5ee5ffff18e6ffffb4e6ffffc6e6ffff1ee7ffff2ae7ffff44e7ffffa4eaffff1eedffff56f1ffff82f3fffff0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +595,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 19}
     m_SearchString: 
   m_ExpandedScenes:
-  - Menu
+  - 11
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -620,20 +620,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 220
+    x: 211
     y: 92
-    width: 354
+    width: 456
     height: 336
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 13712.805869392325
+  lastFramingTime: 118.97994711044514
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 226.5, y: 159.5, z: 0}
+    m_Target: {x: -2.5587146, y: -0.45924804, z: -0.072265625}
     speed: 2
-    m_Value: {x: 226.5, y: 159.5, z: 0}
+    m_Value: {x: -2.5587146, y: -0.45924804, z: -0.072265625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -665,9 +665,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 122.20271
+    m_Target: 10.356172
     speed: 2
-    m_Value: 122.20271
+    m_Value: 10.356172
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -758,9 +758,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 578
+    x: 671
     y: 92
-    width: 453
+    width: 416
     height: 336
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
@@ -771,10 +771,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -226.5
-    m_HBaseRangeMax: 226.5
-    m_VBaseRangeMin: -127.40625
-    m_VBaseRangeMax: 127.40625
+    m_HBaseRangeMin: -208
+    m_HBaseRangeMax: 208
+    m_VBaseRangeMin: -117
+    m_VBaseRangeMax: 117
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -791,25 +791,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 453
+      width: 416
       height: 319
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 226.5, y: 159.5}
+    m_Translation: {x: 208, y: 159.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -226.5
+      x: -208
       y: -159.5
-      width: 453
+      width: 416
       height: 319
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 453, y: 336}
+  m_LastWindowPixelSize: {x: 416, y: 336}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -835,7 +835,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 449
-    width: 1031
+    width: 1087
     height: 257
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -850,20 +850,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Game Assets/Scripts
+    - Assets/Game Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Game Assets/Scripts
+  - Assets/Game Assets/Scenes
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\Tymek\Documents\GitHub\Spaget
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: f2390000
-    m_LastClickedID: 14834
-    m_ExpandedIDs: 000000009c2c0000f62e00003c2f00005c2f0000922f00003a340000c8380000d6380000ba390000d03a0000923b0000743d0000c23d00006a3f00005c4000006242000056430000144a00001c4a0000d24a0000184e00001a4e00001c4e00001e4e0000204e0000224e0000244e0000264e0000284e000000ca9a3bffffff7f
+    m_SelectedIDs: fa3a0000
+    m_LastClickedID: 15098
+    m_ExpandedIDs: 000000009c2c0000f62e00003c2f00005c2f0000922f00003a340000c8380000d6380000ba390000d03a0000923b0000743d0000c23d00006a3f00005c4000006242000056430000144a00001c4a0000d24a00009a4d00009c4d00009e4d0000a04d0000a24d0000a44d0000a64d0000a84d0000aa4d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -891,7 +891,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f8c9ffff
     m_LastClickedID: -13832
-    m_ExpandedIDs: 000000009c2c0000f62e00003c2f00005c2f0000922f00003a340000c8380000d6380000ba390000d03a0000923b0000743d0000c23d00006a3f00005c4000006242000056430000144a00001c4a0000d24a0000184e00001a4e00001c4e00001e4e0000204e0000224e0000244e0000264e0000284e0000
+    m_ExpandedIDs: 000000009c2c0000f62e00003c2f00005c2f0000922f00003a340000c8380000d6380000ba390000d03a0000923b0000743d0000c23d00006a3f00005c4000006242000056430000144a00001c4a0000d24a00009a4d00009c4d00009e4d0000a04d0000a24d0000a44d0000a64d0000a84d0000aa4d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -967,13 +967,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 449
-    width: 1031
+    width: 1087
     height: 257
   m_PersistentViewDataDictionary: {fileID: 0}
-  logPanelScroll: {x: 0, y: 0}
+  logPanelScroll: {x: 0, y: 195}
   logPanelSelectedIndex: -1
   logPanelAutoScroll: 1
-  currentFrame: 196782
+  currentFrame: 203913
   logs:
     lastGrabbedIndex: 13
     lastGrabbedCount: 14
@@ -1006,7 +1006,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.ParticleSystems.AnimatedLight.light''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.ParticleSystems.AnimatedLight.light''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -1016,8 +1017,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2218
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Particle Systems/_Common/Scripts/AnimatedLight.cs
         fileNameWithoutAssets: Mirza Beig/Particle Systems/_Common/Scripts/AnimatedLight.cs
@@ -1446,7 +1447,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffector.particleSystem''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffector.particleSystem''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -1456,8 +1458,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2236
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Scripting/Effects/Particle Affectors/ParticleAffector.cs
         fileNameWithoutAssets: Mirza Beig/Scripting/Effects/Particle Affectors/ParticleAffector.cs
@@ -1887,7 +1889,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffectorGPU.particleSystem''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffectorGPU.particleSystem''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -1897,8 +1900,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2256
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: 'Assets/Mirza Beig/Scripting/Effects/Particle Affectors/GPU '
         fileNameWithoutAssets: 'Mirza Beig/Scripting/Effects/Particle Affectors/GPU '
@@ -2329,7 +2332,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Scripting.Effects.TurbulenceParticleAffectorMT.particleSystem''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Scripting.Effects.TurbulenceParticleAffectorMT.particleSystem''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -2339,8 +2343,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2992
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: 'Assets/Mirza Beig/Scripting/Effects/Particle Affectors/MT '
         fileNameWithoutAssets: 'Mirza Beig/Scripting/Effects/Particle Affectors/MT '
@@ -2770,7 +2774,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Shaders.ImageEffects.IEBase.camera''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Shaders.ImageEffects.IEBase.camera''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -2780,8 +2785,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 3100
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Shaders/_Common/IEBase.cs
         fileNameWithoutAssets: Mirza Beig/Shaders/_Common/IEBase.cs
@@ -3206,7 +3211,8 @@ MonoBehaviour:
       logText: '[CS0219] The variable `bd'' is assigned but its value is never used'
       logTruncatedText: '[CS0219] The variable `bd'' is assigned but its value is
         never used'
-      logColumnText: 
+      logColumnText: '[CS0219] The variable `bd'' is assigned but its value is never
+        used'
       fileName: 
       className: 
       namespaceName: 
@@ -3216,8 +3222,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2222
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Game Assets/Scripts/Boulder.cs
         fileNameWithoutAssets: Game Scripts/Boulder.cs
@@ -3628,42 +3634,37 @@ MonoBehaviour:
       listIndex: 6
       nativeIndex: 6
       nativeIdentifier: 0
-      originalLog: 'System.Windows.Forms.dll assembly is referenced by user code,
-        but is not supported on StandaloneWindows platform. Various failures might
-        follow.
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
+      originalLog: System.Windows.Forms.dll assembly is referenced by user code, but
+        is not supported on StandaloneWindows platform. Various failures might follow.
       originalStackTrace: 'System.Windows.Forms.dll assembly is referenced by user
         code, but is not supported on StandaloneWindows platform. Various failures
         might follow.
 
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()
+        UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
 
 '
-      nativeFileName: C:/buildslave/unity/build/Editor/Mono/BuildPipeline/BuildVerifier.cs
-      nativeLineNumber: 53
+      nativeFileName: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs
+      nativeLineNumber: 222
       watchName: 
-      logText: 'System.Windows.Forms.dll assembly is referenced by user code, but
-        is not supported on StandaloneWindows platform. Various failures might follow.
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logTruncatedText: 'System.Windows.Forms.dll assembly is referenced by user code,
+      logText: System.Windows.Forms.dll assembly is referenced by user code, but is
+        not supported on StandaloneWindows platform. Various failures might follow.
+      logTruncatedText: System.Windows.Forms.dll assembly is referenced by user code,
         but is not supported on StandaloneWindows platform. Various failures might
         follow.
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logColumnText: 
+      logColumnText: System.Windows.Forms.dll assembly is referenced by user code,
+        but is not supported on StandaloneWindows platform. Various failures might
+        follow.
       fileName: 
       className: 
       namespaceName: 
-      lineCount: 2
+      lineCount: 1
       hasSourceCode: 0
       timeStamp: -1
       timeFrame: -1
       instanceID: 0
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
@@ -4051,35 +4052,29 @@ MonoBehaviour:
       listIndex: 7
       nativeIndex: 7
       nativeIdentifier: 0
-      originalLog: 'Build completed with a result of ''Succeeded''
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
+      originalLog: Build completed with a result of 'Succeeded'
       originalStackTrace: 'Build completed with a result of ''Succeeded''
 
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()
+        UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
 
 '
-      nativeFileName: C:/buildslave/unity/build/Editor/Mono/BuildPlayerWindowBuildMethods.cs
-      nativeLineNumber: 184
+      nativeFileName: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs
+      nativeLineNumber: 222
       watchName: 
-      logText: 'Build completed with a result of ''Succeeded''
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logTruncatedText: 'Build completed with a result of ''Succeeded''
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logColumnText: 
+      logText: Build completed with a result of 'Succeeded'
+      logTruncatedText: Build completed with a result of 'Succeeded'
+      logColumnText: Build completed with a result of 'Succeeded'
       fileName: 
       className: 
       namespaceName: 
-      lineCount: 2
+      lineCount: 1
       hasSourceCode: 0
       timeStamp: -1
       timeFrame: -1
       instanceID: 0
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
@@ -4456,7 +4451,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 8
       nativeIndex: 8
-      nativeIdentifier: -1094
+      nativeIdentifier: -1244
       originalLog: 'Assets/Game Assets/Scripts/Boulder.cs(23,28): warning CS0219:
         The variable `bd'' is assigned but its value is never used
 
@@ -4471,7 +4466,8 @@ MonoBehaviour:
       logText: '[CS0219] The variable `bd'' is assigned but its value is never used'
       logTruncatedText: '[CS0219] The variable `bd'' is assigned but its value is
         never used'
-      logColumnText: 
+      logColumnText: '[CS0219] The variable `bd'' is assigned but its value is never
+        used'
       fileName: 
       className: 
       namespaceName: 
@@ -4481,8 +4477,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2222
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Game Assets/Scripts/Boulder.cs
         fileNameWithoutAssets: Game Scripts/Boulder.cs
@@ -4892,7 +4888,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 9
       nativeIndex: 9
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/Mirza Beig/Editor Extensions/Utilities/Particle Scaler/Editor/ParticleScalerExtensions.cs(84,27):
         warning CS0618: `UnityEngine.ParticleSystem.ShapeModule.meshScale'' is obsolete:
         `meshScale property is deprecated.Please use scale instead.''
@@ -4913,7 +4909,10 @@ MonoBehaviour:
         is obsolete:
 
         `meshScale property is deprecated.Please use scale instead.'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEngine.ParticleSystem.ShapeModule.meshScale''
+        is obsolete:
+
+        `meshScale property is deprecated.Please use scale instead.'''
       fileName: 
       className: 
       namespaceName: 
@@ -4923,8 +4922,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1858
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Editor Extensions/Utilities/Particle Scaler/Editor/ParticleScalerExtensions.cs
         fileNameWithoutAssets: Mirza Beig/Editor Extensions/Utilities/Particle Scaler/Editor/ParticleScalerExtensions.cs
@@ -5336,7 +5335,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 10
       nativeIndex: 10
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(473,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -5358,7 +5357,10 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
@@ -5368,8 +5370,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -5779,7 +5781,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 11
       nativeIndex: 11
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(488,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -5801,7 +5803,10 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
@@ -5811,8 +5816,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -6222,7 +6227,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 12
       nativeIndex: 12
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(492,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -6244,7 +6249,10 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
@@ -6254,8 +6262,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -6662,10 +6670,10 @@ MonoBehaviour:
       remoteEndPoint: Local
       logPanelVisible: 1
       logPanelIndex: 13
-      logOutputHeight: -1
+      logOutputHeight: 29
       listIndex: 13
       nativeIndex: 13
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(534,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -6687,18 +6695,21 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
       lineCount: 1
-      hasSourceCode: 0
+      hasSourceCode: 1
       timeStamp: -1
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -6714,14 +6725,19 @@ MonoBehaviour:
         stackLabel: Compiler Warning
         stackLabel2: ' at Assets/ProCore/ProGrids/Editor/pg_Editor.cs:534 column 22'
         stackLabelContent:
-          m_Text: 
+          m_Text: <b>Compiler Warning</b> at Assets/ProCore/ProGrids/Editor/pg_Editor.cs:534
+            column 22
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabelWidth: 0
-        stackLabelHeight: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
+        stackLabelWidth: 599
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode:
+        - '532:   SceneView.onSceneGUIDelegate -= OnSceneGUI;'
+        - '533:   EditorApplication.update -= Update;'
+        - '534:   EditorApplication.hierarchyWindowChanged -= HierarchyWindowChanged;'
+        - '536:   instance = null;'
+        sourceCodeUpdated: 1
         showSource: 1
       ignoredStackEntries: []
       lastMatchedCount: 1
@@ -7131,7 +7147,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.ParticleSystems.AnimatedLight.light''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.ParticleSystems.AnimatedLight.light''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -7141,8 +7158,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2218
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Particle Systems/_Common/Scripts/AnimatedLight.cs
         fileNameWithoutAssets: Mirza Beig/Particle Systems/_Common/Scripts/AnimatedLight.cs
@@ -7571,7 +7588,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffector.particleSystem''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffector.particleSystem''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -7581,8 +7599,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2236
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Scripting/Effects/Particle Affectors/ParticleAffector.cs
         fileNameWithoutAssets: Mirza Beig/Scripting/Effects/Particle Affectors/ParticleAffector.cs
@@ -8012,7 +8030,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffectorGPU.particleSystem''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Scripting.Effects.ParticleAffectorGPU.particleSystem''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -8022,8 +8041,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2256
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: 'Assets/Mirza Beig/Scripting/Effects/Particle Affectors/GPU '
         fileNameWithoutAssets: 'Mirza Beig/Scripting/Effects/Particle Affectors/GPU '
@@ -8454,7 +8473,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Scripting.Effects.TurbulenceParticleAffectorMT.particleSystem''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Scripting.Effects.TurbulenceParticleAffectorMT.particleSystem''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -8464,8 +8484,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2992
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: 'Assets/Mirza Beig/Scripting/Effects/Particle Affectors/MT '
         fileNameWithoutAssets: 'Mirza Beig/Scripting/Effects/Particle Affectors/MT '
@@ -8895,7 +8915,8 @@ MonoBehaviour:
         does not hide an inherited member. The new keyword is not required'
       logTruncatedText: '[CS0109] The member `MirzaBeig.Shaders.ImageEffects.IEBase.camera''
         does not hide an inherited member. The new keyword is not required'
-      logColumnText: 
+      logColumnText: '[CS0109] The member `MirzaBeig.Shaders.ImageEffects.IEBase.camera''
+        does not hide an inherited member. The new keyword is not required'
       fileName: 
       className: 
       namespaceName: 
@@ -8905,8 +8926,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 3100
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Shaders/_Common/IEBase.cs
         fileNameWithoutAssets: Mirza Beig/Shaders/_Common/IEBase.cs
@@ -9331,7 +9352,8 @@ MonoBehaviour:
       logText: '[CS0219] The variable `bd'' is assigned but its value is never used'
       logTruncatedText: '[CS0219] The variable `bd'' is assigned but its value is
         never used'
-      logColumnText: 
+      logColumnText: '[CS0219] The variable `bd'' is assigned but its value is never
+        used'
       fileName: 
       className: 
       namespaceName: 
@@ -9341,8 +9363,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2222
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Game Assets/Scripts/Boulder.cs
         fileNameWithoutAssets: Game Scripts/Boulder.cs
@@ -9753,42 +9775,37 @@ MonoBehaviour:
       listIndex: 6
       nativeIndex: 6
       nativeIdentifier: 0
-      originalLog: 'System.Windows.Forms.dll assembly is referenced by user code,
-        but is not supported on StandaloneWindows platform. Various failures might
-        follow.
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
+      originalLog: System.Windows.Forms.dll assembly is referenced by user code, but
+        is not supported on StandaloneWindows platform. Various failures might follow.
       originalStackTrace: 'System.Windows.Forms.dll assembly is referenced by user
         code, but is not supported on StandaloneWindows platform. Various failures
         might follow.
 
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()
+        UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
 
 '
-      nativeFileName: C:/buildslave/unity/build/Editor/Mono/BuildPipeline/BuildVerifier.cs
-      nativeLineNumber: 53
+      nativeFileName: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs
+      nativeLineNumber: 222
       watchName: 
-      logText: 'System.Windows.Forms.dll assembly is referenced by user code, but
-        is not supported on StandaloneWindows platform. Various failures might follow.
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logTruncatedText: 'System.Windows.Forms.dll assembly is referenced by user code,
+      logText: System.Windows.Forms.dll assembly is referenced by user code, but is
+        not supported on StandaloneWindows platform. Various failures might follow.
+      logTruncatedText: System.Windows.Forms.dll assembly is referenced by user code,
         but is not supported on StandaloneWindows platform. Various failures might
         follow.
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logColumnText: 
+      logColumnText: System.Windows.Forms.dll assembly is referenced by user code,
+        but is not supported on StandaloneWindows platform. Various failures might
+        follow.
       fileName: 
       className: 
       namespaceName: 
-      lineCount: 2
+      lineCount: 1
       hasSourceCode: 0
       timeStamp: -1
       timeFrame: -1
       instanceID: 0
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
@@ -10176,35 +10193,29 @@ MonoBehaviour:
       listIndex: 7
       nativeIndex: 7
       nativeIdentifier: 0
-      originalLog: 'Build completed with a result of ''Succeeded''
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
+      originalLog: Build completed with a result of 'Succeeded'
       originalStackTrace: 'Build completed with a result of ''Succeeded''
 
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()
+        UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
 
 '
-      nativeFileName: C:/buildslave/unity/build/Editor/Mono/BuildPlayerWindowBuildMethods.cs
-      nativeLineNumber: 184
+      nativeFileName: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs
+      nativeLineNumber: 222
       watchName: 
-      logText: 'Build completed with a result of ''Succeeded''
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logTruncatedText: 'Build completed with a result of ''Succeeded''
-
-        UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()'
-      logColumnText: 
+      logText: Build completed with a result of 'Succeeded'
+      logTruncatedText: Build completed with a result of 'Succeeded'
+      logColumnText: Build completed with a result of 'Succeeded'
       fileName: 
       className: 
       namespaceName: 
-      lineCount: 2
+      lineCount: 1
       hasSourceCode: 0
       timeStamp: -1
       timeFrame: -1
       instanceID: 0
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
@@ -10581,7 +10592,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 8
       nativeIndex: 8
-      nativeIdentifier: -1094
+      nativeIdentifier: -1244
       originalLog: 'Assets/Game Assets/Scripts/Boulder.cs(23,28): warning CS0219:
         The variable `bd'' is assigned but its value is never used
 
@@ -10596,7 +10607,8 @@ MonoBehaviour:
       logText: '[CS0219] The variable `bd'' is assigned but its value is never used'
       logTruncatedText: '[CS0219] The variable `bd'' is assigned but its value is
         never used'
-      logColumnText: 
+      logColumnText: '[CS0219] The variable `bd'' is assigned but its value is never
+        used'
       fileName: 
       className: 
       namespaceName: 
@@ -10606,8 +10618,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 2222
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 20
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Game Assets/Scripts/Boulder.cs
         fileNameWithoutAssets: Game Scripts/Boulder.cs
@@ -11017,7 +11029,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 9
       nativeIndex: 9
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/Mirza Beig/Editor Extensions/Utilities/Particle Scaler/Editor/ParticleScalerExtensions.cs(84,27):
         warning CS0618: `UnityEngine.ParticleSystem.ShapeModule.meshScale'' is obsolete:
         `meshScale property is deprecated.Please use scale instead.''
@@ -11038,7 +11050,10 @@ MonoBehaviour:
         is obsolete:
 
         `meshScale property is deprecated.Please use scale instead.'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEngine.ParticleSystem.ShapeModule.meshScale''
+        is obsolete:
+
+        `meshScale property is deprecated.Please use scale instead.'''
       fileName: 
       className: 
       namespaceName: 
@@ -11048,8 +11063,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1858
       collapsedCount: 1
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/Mirza Beig/Editor Extensions/Utilities/Particle Scaler/Editor/ParticleScalerExtensions.cs
         fileNameWithoutAssets: Mirza Beig/Editor Extensions/Utilities/Particle Scaler/Editor/ParticleScalerExtensions.cs
@@ -11461,7 +11476,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 10
       nativeIndex: 10
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(473,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -11483,7 +11498,10 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
@@ -11493,8 +11511,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -11904,7 +11922,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 11
       nativeIndex: 11
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(488,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -11926,7 +11944,10 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
@@ -11936,8 +11957,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -12347,7 +12368,7 @@ MonoBehaviour:
       logOutputHeight: -1
       listIndex: 12
       nativeIndex: 12
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(492,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -12369,7 +12390,10 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
@@ -12379,8 +12403,8 @@ MonoBehaviour:
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -12787,10 +12811,10 @@ MonoBehaviour:
       remoteEndPoint: Local
       logPanelVisible: 1
       logPanelIndex: 13
-      logOutputHeight: -1
+      logOutputHeight: 29
       listIndex: 13
       nativeIndex: 13
-      nativeIdentifier: -1098
+      nativeIdentifier: -1248
       originalLog: 'Assets/ProCore/ProGrids/Editor/pg_Editor.cs(534,22): warning CS0618:
         `UnityEditor.EditorApplication.hierarchyWindowChanged'' is obsolete: `Use
         EditorApplication.hierarchyChanged''
@@ -12812,18 +12836,21 @@ MonoBehaviour:
         is obsolete:
 
         `Use EditorApplication.hierarchyChanged'''
-      logColumnText: 
+      logColumnText: '[CS0618] `UnityEditor.EditorApplication.hierarchyWindowChanged''
+        is obsolete:
+
+        `Use EditorApplication.hierarchyChanged'''
       fileName: 
       className: 
       namespaceName: 
       lineCount: 1
-      hasSourceCode: 0
+      hasSourceCode: 1
       timeStamp: -1
       timeFrame: -1
       instanceID: 1876
       collapsedCount: 2
-      cachedHeight: -1
-      cachedHeightLogWidth: 0
+      cachedHeight: 33
+      cachedHeightLogWidth: 1043
       stackEntries:
       - fileName: Assets/ProCore/ProGrids/Editor/pg_Editor.cs
         fileNameWithoutAssets: ProCore/ProGrids/Editor/pg_Editor.cs
@@ -12839,14 +12866,19 @@ MonoBehaviour:
         stackLabel: Compiler Warning
         stackLabel2: ' at Assets/ProCore/ProGrids/Editor/pg_Editor.cs:534 column 22'
         stackLabelContent:
-          m_Text: 
+          m_Text: <b>Compiler Warning</b> at Assets/ProCore/ProGrids/Editor/pg_Editor.cs:534
+            column 22
           m_Image: {fileID: 0}
           m_Tooltip: 
-        stackLabelWidth: 0
-        stackLabelHeight: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
+        stackLabelWidth: 599
+        stackLabelHeight: 23
+        stackSourceLineHeight: 15
+        sourceCode:
+        - '532:   SceneView.onSceneGUIDelegate -= OnSceneGUI;'
+        - '533:   EditorApplication.update -= Update;'
+        - '534:   EditorApplication.hierarchyWindowChanged -= HierarchyWindowChanged;'
+        - '536:   instance = null;'
+        sourceCodeUpdated: 1
         showSource: 1
       ignoredStackEntries: []
       lastMatchedCount: 1
@@ -13272,9 +13304,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1035
+    x: 1091
     y: 92
-    width: 331
+    width: 275
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []

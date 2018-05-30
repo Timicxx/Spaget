@@ -16,7 +16,8 @@ public class Player : MonoBehaviour {
     public float accelerationTimeGrounded = .1f;
     public float moveSpeed = 5f;
     float velocityXSmoothing;
-    Vector3 velocity;
+    [HideInInspector]
+    public Vector3 velocity;
     Vector2 input;
     bool changeGravity = false;
     private bool ANDROID_MODE = false;

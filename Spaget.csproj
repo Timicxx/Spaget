@@ -352,6 +352,7 @@
     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\ReliableChannel.cs" />
     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\SequencedChannel.cs" />
     <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\SimpleChannel.cs" />
+    <Compile Include="Assets\Game Assets\Experimental\AllMightController.cs" />
     <Compile Include="Assets\Game Assets\Multiplayer\MultiPlayer.cs" />
     <Compile Include="Assets\Game Assets\Multiplayer\MultiplayerController2D.cs" />
     <Compile Include="Assets\Game Assets\Scripts\backgroundMusic.cs" />
@@ -367,6 +368,7 @@
     <Compile Include="Assets\Game Assets\Scripts\followPlayer.cs" />
     <Compile Include="Assets\Game Assets\Scripts\just.cs" />
     <Compile Include="Assets\Game Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Game Assets\Scripts\MarkAnimation.cs" />
     <Compile Include="Assets\Game Assets\Scripts\nextLevel.cs" />
     <Compile Include="Assets\Game Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Game Assets\Scripts\platformController.cs" />

@@ -20,7 +20,7 @@ public class Boulder : MonoBehaviour {
         if (Started) {
             time += Time.deltaTime;
             if(time > delay) {
-                GameObject bd = Instantiate<GameObject>(boulder, pos, Quaternion.identity, null);
+                Instantiate<GameObject>(boulder, pos, Quaternion.identity, null);
                 time = 0f;
             }
         }
