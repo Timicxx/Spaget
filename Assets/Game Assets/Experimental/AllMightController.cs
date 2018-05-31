@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AllMightController : MonoBehaviour {
 
     public float moveSpeed = 5f;
+    public LayerMask collisionMask;
     Animator anim;
     Rigidbody rb;
     PlayerInfo inf;
@@ -17,6 +19,7 @@ public class AllMightController : MonoBehaviour {
 
     void Update() {
         InputController();
+        RaycastController();
         Move();
     }
 
@@ -36,10 +39,15 @@ public class AllMightController : MonoBehaviour {
         } else {
             anim.SetBool("Running", false);
         }
+        //Falling
+        if (inf.isFalling) {
+            anim.SetBool("Falling", true);
+        } else {
+            anim.SetBool("Falling", false);
+        }
         //Jump
         if (inf.isJumping) {
-            rb.AddForce(Vector3.up, ForceMode.Impulse);
-            Debug.Log("Triggered Jump!");
+            vel.y += moveSpeed * 5f;
             anim.SetTrigger("Jump");
         }
         //Apply
@@ -61,6 +69,26 @@ public class AllMightController : MonoBehaviour {
         }
         if(inputVector.y != 0) {
             inf.isJumping = true;
+        }
+        if (Input.GetKeyDown(KeyCode.P)) {
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
+    private void RaycastController() {
+        RaycastHit hit;
+        Vector3 rayOrigin = transform.position;
+
+        if(Physics.Raycast(rayOrigin, Vector3.down, out hit, 2f, collisionMask)) {
+            if(hit.distance < 0.5f && hit.transform.tag == "Ground") {
+                inf.isGrounded = true;
+            }
+            if(hit.distance > 1f) {
+                inf.isFalling = true;
+            }
+            if(hit.distance < 0.25f) {
+                anim.SetTrigger("Land");
+            }
         }
     }
 

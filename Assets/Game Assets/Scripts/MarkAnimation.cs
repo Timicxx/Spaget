@@ -23,5 +23,11 @@ public class MarkAnimation : MonoBehaviour {
         } else {
             anim.SetBool("Walking", false);
         }
+
+        if (GetComponent<Player>().gravity > 0) {
+            sprite.flipY = true;
+        } else {
+            sprite.flipY = false;
+        }
 	}
 }

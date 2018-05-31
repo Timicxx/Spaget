@@ -19,7 +19,8 @@ public class Player : MonoBehaviour {
     [HideInInspector]
     public Vector3 velocity;
     Vector2 input;
-    bool changeGravity = false;
+    [HideInInspector]
+    public bool changeGravity = false;
     private bool ANDROID_MODE = false;
 
     private void Awake() {
@@ -114,6 +115,11 @@ public class Player : MonoBehaviour {
             GameObject fallingTrap = Instantiate<GameObject>(trap);
             if(SceneManager.GetActiveScene().name == "3") {
                 fallingTrap.GetComponent<fallingSpikes>().collisionMask = LayerMask.GetMask("Nothing");
+            }
+            if(SceneManager.GetActiveScene().name == "8") {
+                fallingTrap.GetComponent<fallingSpikes>().collisionMask = LayerMask.GetMask("Nothing");
+                fallingTrap.transform.position = new Vector3(-8.4f, 0, 0);
+                return;
             }
             Vector3 pos = GameObject.FindWithTag("Player").transform.position;
             fallingTrap.transform.position = new Vector3(pos.x, pos.y + 5f, 1f);
