@@ -7,67 +7,73 @@ public class AllMightController : MonoBehaviour {
     public float moveSpeed = 5f;
     Animator anim;
     Rigidbody rb;
-    PlayerInfo playerInfo;
-    float distToGnd;
+    PlayerInfo inf;
 
     void Start() {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        playerInfo.Reset();
-        distToGnd = GetComponent<BoxCollider>().bounds.extents.y;
+        inf.Reset();
     }
 
     void Update() {
         InputController();
         Move();
-
-        playerInfo.Reset();
     }
 
     private void Move() {
         Vector3 vel = rb.velocity;
         Vector3 rot = transform.localEulerAngles;
 
-        if (playerInfo.isMoving && playerInfo.IsGrounded(transform.position, distToGnd)) {
-            vel.x = moveSpeed * playerInfo.direction;
-            if(playerInfo.direction == 1) {
+        //Move
+        if (inf.isMoving) {
+            anim.SetBool("Running", true);
+            vel.x = moveSpeed * inf.direction;
+            if(inf.direction == 1) {
                 rot.y = 90;
             } else {
                 rot.y = 270;
             }
+        } else {
+            anim.SetBool("Running", false);
         }
-        if (playerInfo.isJumping && playerInfo.IsGrounded(transform.position, distToGnd)) {
+        //Jump
+        if (inf.isJumping) {
             rb.AddForce(Vector3.up, ForceMode.Impulse);
+            Debug.Log("Triggered Jump!");
+            anim.SetTrigger("Jump");
         }
+        //Apply
         rb.velocity = vel;
         transform.localEulerAngles = rot;
+        //Reset
+        inf.Reset();
     }
 
     private void InputController() {
-        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Jump"));
+        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetKeyDown(KeyCode.Space) ? 1 : 0);
         if(inputVector.x != 0) {
-            playerInfo.isMoving = true;
-            playerInfo.direction = inputVector.x > 0 ? 1 : -1;
+            inf.isMoving = true;
+            if(inputVector.x > 0) {
+                inf.direction = 1;
+            } else {
+                inf.direction = -1;
+            }
         }
         if(inputVector.y != 0) {
-            playerInfo.isJumping = true;
+            inf.isJumping = true;
         }
     }
 
-    struct PlayerInfo{
-        public bool isJumping;
+    struct PlayerInfo {
+        public bool isGrounded;
         public bool isMoving;
+        public bool isJumping;
         public bool isFalling;
 
         public int direction;
 
         public void Reset() {
-            isJumping = isMoving = isFalling = false;
-            direction = 0;
-        }
-
-        public bool IsGrounded(Vector3 pos, float distToGnd) {
-            return Physics.Raycast(pos, -Vector3.up, distToGnd + 0.1f);
+            isGrounded = isMoving = isJumping = isFalling = false;
         }
     }
 }
