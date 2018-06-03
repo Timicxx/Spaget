@@ -40,6 +40,9 @@ public class DontDelet : MonoBehaviour {
 
     private void OnApplicationQuit() {
         string DeletPath = Application.temporaryCachePath + "/DO NOT DELET ME MANNEN";
-        File.Delete(DeletPath);
+        if (File.Exists(DeletPath)) {
+            File.Delete(DeletPath);
+        }
+        
     }
 }

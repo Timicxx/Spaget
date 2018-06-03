@@ -23,7 +23,7 @@ public class Attack : MonoBehaviour {
         hearts = GameObject.FindGameObjectsWithTag("Heart").OrderBy(go => go.name).ToList();
         if (hearts.Count == 1) {
             Destroy(hearts[0]);
-            PlayerPrefs.SetInt("lastScene", 16);
+            PlayerPrefs.SetInt("lastScene", 15);
             GetComponent<Player>().LoadLevel(1);
         } else {
             Destroy(hearts[0]);
