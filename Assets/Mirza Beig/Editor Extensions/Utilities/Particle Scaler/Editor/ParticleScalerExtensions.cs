@@ -81,7 +81,7 @@ namespace MirzaBeig
                     shape.angle *= scale;
                     shape.randomDirectionAmount *= scale;
                     shape.sphericalDirectionAmount *= scale;
-                    shape.meshScale *= scale;
+                    shape.scale *= scale;
                     shape.normalOffset *= scale;
 
                     // Velocity over lifetime.
