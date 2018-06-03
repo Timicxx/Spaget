@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class win : MonoBehaviour { 
     public double time;
+    bool loaded = false;
 
     private void Awake() {
         try {
@@ -17,8 +18,9 @@ public class win : MonoBehaviour {
 
     void Update() {
         time += Time.deltaTime;
-        if (time > 2.0f) {
+        if (time > 2.0f && !loaded) {
             SceneManager.LoadSceneAsync("Menu");
+            loaded = true;
         }
     }
 }

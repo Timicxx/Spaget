@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Controller2D : RayCastController {
 
+    public Vector3 velocity;
     public float maxSlopeAngle = 60;
 
     public CollisionInfo collisions;
@@ -18,6 +19,7 @@ public class Controller2D : RayCastController {
     }
 
     public void Move(Vector3 velocity, bool isStandingOnPlatform = false) {
+        this.velocity = velocity;
         CalcRaySpacing();
         UpdateRaycastPoints();
         collisions.Reset();
@@ -36,7 +38,6 @@ public class Controller2D : RayCastController {
         if (isStandingOnPlatform) {
             collisions.below = true;
         }
-        
         transform.Translate(velocity);
     }
 
