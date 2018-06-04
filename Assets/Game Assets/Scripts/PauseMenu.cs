@@ -41,7 +41,8 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void Quit () {
+        PlayerPrefs.DeleteAll();
         Application.Quit();
-        print("Quit");
+        Debug.Log("Quit");
     }
 }

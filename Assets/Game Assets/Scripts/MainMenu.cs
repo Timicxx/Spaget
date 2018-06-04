@@ -55,7 +55,8 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void Exit() {
+        PlayerPrefs.DeleteAll();
         Application.Quit();
-        print("Quit");
+        Debug.Log("Quit");
     }
 }

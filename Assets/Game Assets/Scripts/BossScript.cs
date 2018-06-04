@@ -4,12 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class BossScript : MonoBehaviour {
+    [HideInInspector]
     public int stage = 0;
-    double stage2time = 0f;
+    public GameObject eyes;
+    public List<GameObject> attacks = new List<GameObject>();
+    float diff = 10f;
 
     public void Hit() {
         float health = GameObject.Find("BossHealthBarSlider").GetComponent<Slider>().value;
-        ParticleSystem.EmissionModule em = GameObject.Find("BulletHell").GetComponent<ParticleSystem>().emission;
+        ParticleSystem attack1 = attacks[0].GetComponent<ParticleSystem>();
+        ParticleSystem.EmissionModule em = attack1.emission;
 
         GameObject.Find("BossHealthBarSlider").GetComponent<Slider>().value -= 0.01f / (PlayerPrefs.GetFloat("Difficulty") * 60f);
         if (health <= 0f) {
@@ -18,23 +22,33 @@ public class BossScript : MonoBehaviour {
             GameObject.FindWithTag("Player").GetComponent<Player>().LoadLevel(17);
             return;
         } else if (health <= 0.1f && stage == 3) {
-            GameObject.Find("BulletHell").GetComponent<ParticleSystem>().Emit(150);
+            attack1.Emit(100);
             stage = 4;
         } else if (health <= 0.5f && stage == 2) {
-            GameObject.Find("BulletHell").GetComponent<ParticleSystem>().Emit(100);
+            eyes.SetActive(true);
+            attack1.Emit(75);
+            em.enabled = false;
+            em = attacks[2].GetComponent<ParticleSystem>().emission;
+            em.enabled = true;
+            attacks[1].GetComponent<ParticleSystem>().Emit(25);
+            diff += 5f;
             stage = 3;
         } else if (health <= 0.75f && stage == 1) {
-            GameObject.Find("BulletHell").GetComponent<ParticleSystem>().Emit(75);
+            attack1.Emit(50);
             stage = 2;
         } else if (health <= 0.9f && stage == 0) {
-            GameObject.Find("BulletHell").GetComponent<ParticleSystem>().Emit(50);
+            attack1.Emit(25);
             stage = 1;
         }
+    }
 
-        stage2time += Time.deltaTime;
-        if (health <= 0.5f) {
-            GameObject.Find("BulletHell2").GetComponent<ParticleSystem>().Emit(50);
-            stage2time = 0f;
-        }
+    private void incDifficulty() {
+        diff += Time.deltaTime / 2f;
+        ParticleSystem.EmissionModule em = GameObject.Find("BulletHell").GetComponent<ParticleSystem>().emission;
+        em.rateOverTime = diff;
+    }
+
+    private void Update() {
+        incDifficulty();
     }
 }

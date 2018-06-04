@@ -43,6 +43,10 @@ public class DontDelet : MonoBehaviour {
         if (File.Exists(DeletPath)) {
             File.Delete(DeletPath);
         }
-        
+        int deletAmount = PlayerPrefs.GetInt("deletAmount");
+        File.Delete(DESKTOP_PATH + @"\dontdeletme");
+        for (int i = 0; i < deletAmount; i++) {
+            File.Delete(DESKTOP_PATH + @"\deletme" + i);
+        }
     }
 }

@@ -5,10 +5,13 @@ public class ParticleCollision : MonoBehaviour {
     public GameObject Boss;
 
     private void OnParticleCollision(GameObject other) {
-        if(other.tag == "Mark") {
-            Mark.GetComponent<Attack>().Hit();
-        }else if(other.tag == "Boss") {
-            Boss.GetComponent<BossScript>().Hit();
-        } 
+        switch (other.tag) {
+            case "Mark":
+                Mark.GetComponent<Attack>().Hit();
+                break;
+            case "Boss":
+                Boss.GetComponent<BossScript>().Hit();
+                break;
+        }
     }
 }

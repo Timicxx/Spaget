@@ -10,10 +10,8 @@ public class Boss : MonoBehaviour {
 
     float xoff1 = 0f;
     float xoff2 = 1000f;
-    float diff = 10f;
 
     void Update () {
-        incDifficulty();
         float perlin1 = map(Mathf.PerlinNoise(xoff1, xoff1), 0, 1, -8f, 8f);
         float perlin2 = map(Mathf.PerlinNoise(xoff2, xoff2), 0, 1, -4f, 4f);
 
@@ -22,12 +20,6 @@ public class Boss : MonoBehaviour {
         xoff1 += inc_val;
         xoff2 += inc_val;
 	}
-
-    private void incDifficulty() {
-        diff += Time.deltaTime/2f;
-        ParticleSystem.EmissionModule em = GameObject.Find("BulletHell").GetComponent<ParticleSystem>().emission;
-        em.rateOverTime = diff;
-    }
 
     private float map(float s, float a1, float a2, float b1, float b2) {
         return b1 + (s - a1) * (b2 - b1) / (a2 - a1);
