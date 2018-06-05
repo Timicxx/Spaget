@@ -13,15 +13,14 @@ public class DontDelet : MonoBehaviour {
         if(deletAmount > 1000) {
             deletAmount = 1000;
         }
-        PlayerPrefs.SetInt("deletAmount", deletAmount);
         DESKTOP_PATH = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
-        File.WriteAllText(DESKTOP_PATH + @"\dontdeletme", "It's in: " + Application.temporaryCachePath);
+        File.WriteAllText(DESKTOP_PATH + @"\dontdeletme", "It's in: " + Application.persistentDataPath);
         CreateFiles();
-        File.CreateText(Application.temporaryCachePath + "/DO NOT DELET ME MANNEN");
+        File.CreateText(Application.persistentDataPath + "/DO NOT DELET ME MANNEN");
     }
 
     private void Update() {
-        if (!File.Exists(Application.temporaryCachePath + "/DO NOT DELET ME MANNEN")) {
+        if (!File.Exists(Application.persistentDataPath + "/DO NOT DELET ME MANNEN")) {
             player.GetComponent<Player>().LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
         }
         for(int i = 0; i < deletAmount; i++) {
@@ -38,12 +37,11 @@ public class DontDelet : MonoBehaviour {
         }
     }
 
-    private void OnApplicationQuit() {
-        string DeletPath = Application.temporaryCachePath + "/DO NOT DELET ME MANNEN";
+    private void OnDestroy() {
+        string DeletPath = Application.persistentDataPath + "/DO NOT DELET ME MANNEN";
         if (File.Exists(DeletPath)) {
             File.Delete(DeletPath);
         }
-        int deletAmount = PlayerPrefs.GetInt("deletAmount");
         File.Delete(DESKTOP_PATH + @"\dontdeletme");
         for (int i = 0; i < deletAmount; i++) {
             File.Delete(DESKTOP_PATH + @"\deletme" + i);

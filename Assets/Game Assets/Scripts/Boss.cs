@@ -17,8 +17,8 @@ public class Boss : MonoBehaviour {
 
         transform.localPosition = new Vector2(perlin1 + extra_x, perlin2 + extra_y);
 
-        xoff1 += inc_val;
-        xoff2 += inc_val;
+        xoff1 += Time.deltaTime/4;
+        xoff2 += Time.deltaTime/4;
 	}
 
     private float map(float s, float a1, float a2, float b1, float b2) {

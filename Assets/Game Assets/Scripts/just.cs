@@ -9,13 +9,13 @@ public class just : MonoBehaviour {
 
     private void Start() {
         PlayerPrefs.SetInt("respawned", 0);
-        initialPos = GameObject.Find("Lines").transform.position;
+        initialPos = GameObject.Find("Line").transform.position;
     }
 
     void Update () {
         int respawned = PlayerPrefs.GetInt("respawned");
         if (respawned != lines) {
-            initialPos.y -= 2;
+            initialPos.y -= 5;
             lines++;
             Instantiate<GameObject>(Line, initialPos, Quaternion.identity, GameObject.Find("Lines").transform);
         }

@@ -21,13 +21,6 @@ public class Player : MonoBehaviour {
     Vector2 input;
     [HideInInspector]
     public bool changeGravity = false;
-    private bool ANDROID_MODE = false;
-
-    private void Awake() {
-        #if UNITY_ANDROID
-            ANDROID_MODE = true;
-        #endif
-    }
 
     private void Start() {
         ctrl2D = GetComponent<Controller2D>();
@@ -45,11 +38,7 @@ public class Player : MonoBehaviour {
         if (PauseMenu.isPaused) {
             return;
         }
-        if (ANDROID_MODE) {
-            input = new Vector2(-Input.acceleration.x, -Input.acceleration.y);
-        } else {
-            input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        }
+        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         
         InputController();
         float TargetVelocityX = input.x * moveSpeed;
