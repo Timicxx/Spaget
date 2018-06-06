@@ -379,6 +379,7 @@
     <Compile Include="Assets\Game Assets\Scripts\RayCastController.cs" />
     <Compile Include="Assets\Game Assets\Scripts\restart.cs" />
     <Compile Include="Assets\Game Assets\Scripts\Settings.cs" />
+    <Compile Include="Assets\Game Assets\Scripts\ShowHitBox.cs" />
     <Compile Include="Assets\Game Assets\Scripts\sidewaysSpike.cs" />
     <Compile Include="Assets\Game Assets\Scripts\spikeButton.cs" />
     <Compile Include="Assets\Game Assets\Scripts\spikeExtender.cs" />
