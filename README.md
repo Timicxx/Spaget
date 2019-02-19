@@ -1,2 +1,2 @@
-# Spaget
+# Data
 Unity game
